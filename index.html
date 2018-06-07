@@ -33,7 +33,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand">
-            <a href="#">Rezan Mohammad</a>
+            <a href="#" id="someid" data-toggle="tooltip" title="the best" data-placement="bottom" >Rezan Mohammad</a>
           </div> <!--end projectName -->
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse ">
@@ -103,17 +103,19 @@
         <div class="col-md-4 col-xs-12">
           <h2>Portfolio Concept</h2>
           <p> This portfolio is to show my skills as a web developer. I want to make my portfolio clean, simple and elegant. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p>
+            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button>
+          </p>
         </div><!-- /col -->
         <div class="col-md-4 col-xs-12">
           <h2>Project Goals</h2>
           <p>The purpose of this project is to improve my web development. I plan to spend at least 30 hours a week to complete this course. I have to complete this course by August.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button></p>
        </div><!-- /col -->
         <div class="col-md-4 col-xs-12">
           <h2>Course Goals</h2>
           <p>I was an Agricultural Engineer, now changing careers to web development. After this course I want to work freelance or get a junior position in a company.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button></p>
         </div><!-- /col -->
       </div><!-- /row -->
       <hr>
@@ -170,7 +172,7 @@
         <div class="header">
           <h1 class="faq-header">FAQ</h1>
         </div>
-        <!-- Small modal -->
+        <!-- modal -->
         <div class="modal-button">
           <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
             My Resome
@@ -359,6 +361,12 @@
         }
         return false;
       });
+    </script>
+    <script>
+     $(function () {
+       var tooltip = $('[data-toggle="tooltip"]')
+       tooltip.tooltip();
+     });
     </script>
 
   </body>
