@@ -17,7 +17,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container" >
+    <div id="calculater" class="container" >
       <div class="calculater">
         <div class="row">
           <div class="col-xs-12 ">
@@ -26,32 +26,32 @@
         </div>
         <div class="row">
           <div class="col-xs-12 " id="textbox">
-            <input type="text" name="firstname">
+            <input class="textbox" id="text" type="text" name="text" value="">
           </div>
         </div>
         <div class="row upper">
-          <button type="button" class="btn btn-warning cell col-xs-3 ">(</button>
-          <button type="button" class="btn btn-warning cell  col-xs-3 "> ) </button>
-          <button type="button" class="btn btn-warning cell  col-xs-3 "> % </button>
-          <button type="button" class="btn btn-warning cell  col-xs-3 ">AC </button>
+          <button id="(" type="button" class="btn btn-warning cell col-xs-3 ">(</button>
+          <button id=")" type="button" class="btn btn-warning cell  col-xs-3 "> ) </button>
+          <button id="%" type="button" class="btn btn-warning cell  col-xs-3 "> % </button>
+          <button id="AC" type="button" class="btn btn-warning cell  col-xs-3 ">AC </button>
         </div>
         <div class="row secound">
-          <button type="button" class="btn btn-primary cell col-xs-3 ">7 </button>
-          <button type="button" class="btn btn-primary cell  col-xs-3 "> 8  </button>
-          <button type="button" class="btn btn-primary cell  col-xs-3 "> 9 </button>
-          <button type="button" class="btn btn-warning cell  col-xs-3 ">/</button>
+          <button id="7" type="button" class="btn btn-primary cell col-xs-3 ">7 </button>
+          <button id="8" type="button" class="btn btn-primary cell  col-xs-3 "> 8  </button>
+          <button id="9" type="button" class="btn btn-primary cell  col-xs-3 "> 9 </button>
+          <button id="/" type="button" class="btn btn-warning cell  col-xs-3 ">/</button>
         </div>
         <div class="row third">
-          <button type="button" class="btn btn-primary cell col-xs-3 ">4 </button>
-          <button type="button" class="btn btn-primary cell  col-xs-3 "> 5 </button>
-          <button type="button" class="btn btn-primary cell  col-xs-3 "> 6 </button>
-          <button type="button" class="btn btn-warning cell  col-xs-3 ">*</button>
+          <button id="4" type="button" class="btn btn-primary cell col-xs-3 ">4 </button>
+          <button id="5" type="button" class="btn btn-primary cell  col-xs-3 "> 5 </button>
+          <button id="6" type="button" class="btn btn-primary cell  col-xs-3 "> 6 </button>
+          <button id="*" type="button" class="btn btn-warning cell  col-xs-3 ">*</button>
         </div>
         <div class="row forth">
-          <button type="button" class="btn btn-primary cell col-xs-3 ">1</button>
-          <button type="button" class="btn btn-primary cell  col-xs-3 "> 2 </button>
-          <button type="button" class="btn btn-primary cell  col-xs-3 "> 3</button>
-          <button type="button" class="btn btn-warning cell  col-xs-3 ">-</button>
+          <button id="1" type="button" class="btn btn-primary cell col-xs-3 ">1</button>
+          <button id="2" type="button" class="btn btn-primary cell  col-xs-3 "> 2 </button>
+          <button id="3" type="button" class="btn btn-primary cell  col-xs-3 "> 3</button>
+          <button id="-" type="button" class="btn btn-warning cell  col-xs-3 ">-</button>
         </div>
         <div class="row fifth">
           <button type="button" class="btn btn-primary cell col-xs-3 ">0</button>
@@ -64,5 +64,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/calculator.js"></script>
   </body>
 </html>
